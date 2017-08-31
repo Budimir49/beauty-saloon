@@ -992,8 +992,8 @@ hr {
  */
 @font-face {
   font-family: 'FontAwesome';
-  /*src: url("../fonts/fontawesome/fontawesome-webfont.svg");*/
-  src: url("../fonts/Fontawesome/fontawesome-webfont.woff2") format("woff2"), url("../fonts/Fontawesome/fontawesome-webfont.svg") format("svg");
+  src: url("../fonts/Fontawesome/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/Fontawesome/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/Fontawesome/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/Fontawesome/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/Fontawesome/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/Fontawesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -7040,6 +7040,58 @@ html.mm-opened {
     .welcome strong .fa:last-child {
       margin-right: inherit;
       margin-left: 10px; }
+
+.header-social {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  right: 0;
+  height: 100%;
+  border-left: rgba(255, 255, 255, 0.1) 1px solid;
+  top: 0;
+  padding: 0 12.5px; }
+
+.soc {
+  margin: auto; }
+  .soc ul, .soc li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+  .soc a {
+    color: #2c2c2c;
+    font-size: 17px;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 38px;
+    width: 38px;
+    text-align: center;
+    margin: 18px 0;
+    line-height: 38px;
+    -webkit-border-radius: 10em;
+            border-radius: 10em;
+    -webkit-transition: background-color .20s ease;
+    -o-transition: background-color .20s ease;
+    transition: background-color .20s ease; }
+    .soc a:hover {
+      background-color: rgba(255, 255, 255, 0.4); }
+
+.header-contacts {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  border-top: rgba(255, 255, 255, 0.15) 1px solid;
+  padding: 12.5px 0;
+  width: 100%;
+  background-color: rgba(21, 21, 21, 0.15); }
+  .header-contacts .fa {
+    color: #555;
+    margin-right: 5px; }
+  .header-contacts .phone-h {
+    font-family: firasans, sans-serif;
+    text-align: center; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
