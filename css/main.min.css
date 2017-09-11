@@ -7233,7 +7233,11 @@ html.mm-opened {
     margin-top: 10px;
     margin-bottom: 10px; }
   .welcome p span {
-    font-size: 8px; } }
+    font-size: 8px; }
+  .carousel-services-composition .h3 {
+    font-size: 24px; }
+    .carousel-services-composition .h3 span {
+      font-size: 16px; } }
 
 /*==========  Mobile First  ==========*/
 /* Custom, iPhone Retina */

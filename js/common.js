@@ -69,7 +69,7 @@ $(function() {
     }
     onResize();
 
-    
+
     window.onResize = function ()
     {
         onResize();
