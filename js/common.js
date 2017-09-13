@@ -23,11 +23,12 @@ $(function() {
     });
 
     $('.carousel-services').owlCarousel({
-        // loop: true,
+        loop: true,
         nav: true,
-        smartSpeed: 700,
+        smartSpeed: 1000,
         navText: ['<i class="fa fa-angle-double-left"></i>', '<i class="fa fa-angle-double-right"></i>'],
         responsiveClass: true,
+        dots: false,
         responsive: {
             0: {
                 items: 1
@@ -61,6 +62,13 @@ $(function() {
         var ths = $(this);
         ths.html(ths.html().replace(/(\S+)\s*$/, '<span>$1</span>'));
     });
+
+    $('section .h2').each(function()
+    {
+        var ths = $(this);
+        ths.html(ths.html().replace(/^(\S+)/, '<span>$1</span>'));
+    });
+
 
 
     function onResize()
