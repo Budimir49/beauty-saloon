@@ -44,6 +44,15 @@ $(function() {
 
 
 
+    $('.reviews').owlCarousel({
+        loop: true,
+        items: 1,
+        smartSpeed: 1000,
+        autoHeight: true
+    });
+
+
+
     carouselService();
 
     function carouselService()
@@ -69,10 +78,8 @@ $(function() {
         ths.html(ths.html().replace(/^(\S+)/, '<span>$1</span>'));
     });
 
-    $('select').selectize({
+    $('select').selectize();
 
-
-    });
 
 
     //E-mail Ajax Send
